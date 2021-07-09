@@ -12,6 +12,7 @@ package
 		{
 			var test:TestAdobeAirAneSWC = new TestAdobeAirAneSWC();
 			trace(test.test());
+			//trace(test.test2(2));
 		}
 		
 	}

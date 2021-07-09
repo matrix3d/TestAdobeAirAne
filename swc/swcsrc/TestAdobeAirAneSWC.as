@@ -17,7 +17,11 @@ package
 		public function test():String
 		{
 			return context.call("hello") as String;
-		} 
+		}
+		
+		public function test2(v:int):int{
+			return context.call("test2", v) as int;
+		}
 		
 	}
 	
