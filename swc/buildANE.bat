@@ -3,3 +3,4 @@ call %FLEX%\bin\adt.bat -package -storetype pkcs12 -keystore bat\TestAdobeAirAne
 cd ext
 mkdir _winane.ane
 tar -x -f winane.ane -C _winane.ane
+pause
