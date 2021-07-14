@@ -14,9 +14,9 @@ package
 		{
 			context= ExtensionContext.createExtensionContext("winane", ""); 
 		}
-		public function test():String
+		public function test():int
 		{
-			return context.call("hello") as String;
+			return context.call("hello") as int;
 		}
 		
 		public function test2(v:int):int{

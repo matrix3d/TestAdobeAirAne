@@ -4,16 +4,27 @@ cd %~dp0 & cd ..
 :user_configuration
 
 :: About AIR application packaging
-:: http://livedocs.adobe.com/flex/3/html/help.html?content=CommandLineTools_5.html#1035959
-:: http://livedocs.adobe.com/flex/3/html/distributing_apps_4.html#1037515
+:: http://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fd9.html
 
 :: NOTICE: all paths are relative to project root
 
-:: Your certificate information
-set CERT_NAME="testalchemy"
-set CERT_PASS=fd
-set CERT_FILE="bat\testalchemy.p12"
-set SIGNING_OPTIONS=-storetype pkcs12 -keystore %CERT_FILE% -storepass %CERT_PASS%
+:: Android packaging
+set AND_CERT_NAME="mirapp"
+set AND_CERT_PASS=fd
+set AND_CERT_FILE=cert\mirapp.p12
+set AND_ICONS=icons/android
+
+set AND_SIGNING_OPTIONS=-storetype pkcs12 -keystore "%AND_CERT_FILE%" -storepass %AND_CERT_PASS%
+
+:: iOS packaging
+set IOS_DIST_CERT_FILE=cert\ios.p12
+set IOS_DEV_CERT_FILE=cert\ios.p12
+set IOS_DEV_CERT_PASS=1
+set IOS_PROVISION=cert\ios.mobileprovision
+set IOS_ICONS=icons/ios
+
+set IOS_DEV_SIGNING_OPTIONS=-storetype pkcs12 -keystore "%IOS_DEV_CERT_FILE%" -storepass %IOS_DEV_CERT_PASS% -provisioning-profile %IOS_PROVISION%
+set IOS_DIST_SIGNING_OPTIONS=-storetype pkcs12 -keystore "%IOS_DIST_CERT_FILE%" -storepass %IOS_DEV_CERT_PASS% -provisioning-profile %IOS_PROVISION%
 
 :: Application descriptor
 set APP_XML=application.xml
@@ -26,9 +37,12 @@ set FILE_OR_DIR=-C %APP_DIR% .
 for /f "tokens=3 delims=<>" %%a in ('findstr /R /C:"^[ 	]*<id>" %APP_XML%') do set APP_ID=%%a
 set APP_ID=%APP_ID: =%
 
-:: Output
-set AIR_PATH=air
-set AIR_NAME=testalchemy
+:: Output packages
+set DIST_PATH=dist
+set DIST_NAME=mirapp
+
+:: Debugging using a custom IP
+set DEBUG_IP=192.168.1.87
 
 :validation
 findstr /C:"<id>%APP_ID%</id>" "%APP_XML%" > NUL
@@ -41,7 +55,5 @@ echo ERROR:
 echo   Application ID in 'bat\SetupApp.bat' (APP_ID) 
 echo   does NOT match Application descriptor '%APP_XML%' (id)
 echo.
-if %PAUSE_ERRORS%==1 pause
-exit
 
 :end

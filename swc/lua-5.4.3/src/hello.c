@@ -9,6 +9,24 @@ https://www.cnblogs.com/orangeform/archive/2012/07/20/2460634.html
 #include "lauxlib.h"
 #include "lualib.h"
 #define EXPORT __declspec(dllexport)
+void load(lua_State* L, int* w, int* h) {
+    if (luaL_loadstring(L,"width = 200 height = 300") || lua_pcall(L,0,0,0)) {
+        printf("Error Msg is %s.\n",lua_tostring(L,-1));
+        return;
+    }
+    lua_getglobal(L,"width");
+    lua_getglobal(L,"height");
+    if (!lua_isnumber(L,-2)) {
+        printf("'width' should be a number\n" );
+        return;
+    }
+    if (!lua_isnumber(L,-1)) {
+        printf("'height' should be a number\n" );
+        return;
+    }
+    *w = lua_tointeger(L,-2);
+    *h = lua_tointeger(L,-1);
+}
 
 // ネイティブ関数の本体
 // "Hello, World!" という文字列データをFREObject値として返す
@@ -16,14 +34,14 @@ FREObject _hello(FREObject ctx, void* funcData,
                  uint32_t argc, FREObject argv[]) {
   FREObject ret;
   
-  //lua_State* L = luaL_newstate();
-    //int w,h;
-    //load(L,&w,&h);
-    //lua_close(L);
-  
+  lua_State* L = luaL_newstate();
+    int w,h;
+    load(L,&w,&h);
+    lua_close(L);
+  FRENewObjectFromInt32(w,&ret);
 	//if(w>100){
-  const char* msg = (const char*)("Hello, Worldlua!");
-  FRENewObjectFromUTF8(strlen(msg) + 1, (const uint8_t*)msg, &ret);
+ // const char* msg = (const char*)("Hello, Worldlua!");
+  //FRENewObjectFromUTF8(strlen(msg) + 1, (const uint8_t*)msg, &ret);
 	//}else{
 	//	 const char* msg2 = (const char*)("Hello, World2lua!");
   //FRENewObjectFromUTF8(strlen(msg2) + 1, (const uint8_t*)msg2, &ret);
@@ -82,21 +100,3 @@ EXPORT void extInitializer(void** extDataToSet,
 // アプリケーション終了時に呼ばれる, DLLからエクスポート
 EXPORT void extFinalizer(void* extData) { /* なにもしない */ }
 
-void load(lua_State* L, int* w, int* h) {
-    if (luaL_loadstring(L,"width = 200 height = 300") || lua_pcall(L,0,0,0)) {
-        printf("Error Msg is %s.\n",lua_tostring(L,-1));
-        return;
-    }
-    lua_getglobal(L,"width");
-    lua_getglobal(L,"height");
-    if (!lua_isnumber(L,-2)) {
-        printf("'width' should be a number\n" );
-        return;
-    }
-    if (!lua_isnumber(L,-1)) {
-        printf("'height' should be a number\n" );
-        return;
-    }
-    *w = lua_tointeger(L,-2);
-    *h = lua_tointeger(L,-1);
-}

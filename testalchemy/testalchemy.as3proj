@@ -17,6 +17,7 @@
   <classpaths>
     <class path="src" />
     <class path="Example_Lua\LuaStarling" />
+    <class path="ascript" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -38,7 +39,7 @@
     <option strict="True" />
     <option useNetwork="True" />
     <option useResourceBundleMetadata="True" />
-    <option warnings="True" />
+    <option warnings="False" />
     <option verboseStackTraces="False" />
     <option linkReport="" />
     <option loadExterns="" />

@@ -1,6 +1,7 @@
 package  
 {
 	import flash.display.Sprite;
+	import flash.utils.getTimer;
 	/**
 	 * ...
 	 * @author lizhi
@@ -10,8 +11,9 @@ package
 		
 		public function Main() 
 		{
+			var t:int = getTimer();
 			var test:TestAdobeAirAneSWC = new TestAdobeAirAneSWC();
-			trace(test.test());
+			trace(test.test(),getTimer()-t);
 			//trace(test.test2(2));
 		}
 		

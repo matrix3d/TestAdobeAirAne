@@ -8,8 +8,13 @@
 FREObject _hello(FREObject ctx, void* funcData,
                  uint32_t argc, FREObject argv[]) {
   FREObject ret;
-  const char* msg = (const char*)"Hello, World!";
-  FRENewObjectFromUTF8(strlen(msg) + 1, (const uint8_t*)msg, &ret);
+  //const char* msg = (const char*)"Hello, World!";
+  //FRENewObjectFromUTF8(strlen(msg) + 1, (const uint8_t*)msg, &ret);
+  int32_t j=0;
+  for(int32_t i=0;i<=10000000;i++){
+	  j++;
+	}
+  FRENewObjectFromInt32(j,&ret);
   return ret;
 }
 /** FREObject型
