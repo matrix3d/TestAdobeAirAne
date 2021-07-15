@@ -1,7 +1,7 @@
 /* hello.c */
 #include <string.h>
 #include "FlashRuntimeExtensions.h"
-#define EXPORT __declspec(dllexport)
+//#define EXPORT __declspec(dllexport)
 
 // ネイティブ関数の本体
 // "Hello, World!" という文字列データをFREObject値として返す
@@ -54,7 +54,7 @@ void _ctxInitializer(void* extData, const uint8_t* ctxType,
 void _ctxFinalizer(FREContext ctx) { /* なにもしない */}
 
 // アプリケーション初期化時に呼ばれる, DLLからエクスポート
-EXPORT void extInitializer(void** extDataToSet,
+void extInitializer(void** extDataToSet,
                            FREContextInitializer* ctxInitializerToSet,
                            FREContextFinalizer* ctxFinalizerToSet) {
   *extDataToSet = NULL;  // 拡張データ, ここでは使わない
@@ -63,4 +63,4 @@ EXPORT void extInitializer(void** extDataToSet,
 }
 
 // アプリケーション終了時に呼ばれる, DLLからエクスポート
-EXPORT void extFinalizer(void* extData) { /* なにもしない */ }
+//EXPORT void extFinalizer(void* extData) { /* なにもしない */ }

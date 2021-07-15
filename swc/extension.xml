@@ -9,5 +9,12 @@
 				<finalizer>extFinalizer</finalizer>
 			</applicationDeployment>
 		</platform>
+		<platform name="iPhone-ARM">
+			<applicationDeployment>
+				<nativeLibrary>hello.a</nativeLibrary>
+				<initializer>extInitializer</initializer>
+				<finalizer>extFinalizer</finalizer>
+			</applicationDeployment>
+		</platform>
 </platforms>
 </extension>

@@ -1,40 +1,9 @@
 #include <string.h>
 #include "FlashRuntimeExtensions.h"
-#include <stdio.h>
 #include <string.h>
 #include "lua.h"
 #include "lauxlib.h"
 #include "lualib.h"
-#define EXPORT __declspec(dllexport)
-void load(lua_State* L, int* w) {
-    if (luaL_dostring(L,"i = 0 for j=0,10000000,1 do i=i+1 end")) {
-        printf("Error Msg is %s.\n",lua_tostring(L,-1));
-        return;
-    }
-    lua_getglobal(L,"i");
-    *w = lua_tointeger(L,-1);
-}
-
-FREObject _hello(FREObject ctx, void* funcData,
-                 uint32_t argc, FREObject argv[]) {
-  FREObject ret;
-  
-  lua_State* L = luaL_newstate();
-    int w;
-    load(L,&w);
-    lua_close(L);
-  FRENewObjectFromInt32(w,&ret);
-	//if(w>100){
- // const char* msg = (const char*)("Hello, Worldlua!");
-  //FRENewObjectFromUTF8(strlen(msg) + 1, (const uint8_t*)msg, &ret);
-	//}else{
-	//	 const char* msg2 = (const char*)("Hello, World2lua!");
-  //FRENewObjectFromUTF8(strlen(msg2) + 1, (const uint8_t*)msg2, &ret);
-//	}
-  
-  return ret;
-}
-
 
 FREObject newState(FREObject ctx, void* funcData,
                  uint32_t argc, FREObject argv[]) {
@@ -84,7 +53,7 @@ void _ctxInitializer(void* extData, const uint8_t* ctxType,
 }
 void _ctxFinalizer(FREContext ctx) {}
 
-EXPORT void extInitializer(void** extDataToSet,
+void extInitializer(void** extDataToSet,
                            FREContextInitializer* ctxInitializerToSet,
                            FREContextFinalizer* ctxFinalizerToSet) {
   *extDataToSet = NULL; 
@@ -92,5 +61,5 @@ EXPORT void extInitializer(void** extDataToSet,
   *ctxFinalizerToSet = _ctxFinalizer; 
 }
 
-EXPORT void extFinalizer(void* extData) {}
+void extFinalizer(void* extData) {}
 

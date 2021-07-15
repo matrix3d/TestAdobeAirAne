@@ -4,7 +4,7 @@
   <versionNumber>1.0</versionNumber>
   <filename>TestAdobeAirAneSWC</filename>
   <name>TestAdobeAirAneSWC</name>
-  <supportedProfiles>extendedDesktop</supportedProfiles>
+  <supportedProfiles>mobileDevice</supportedProfiles>
   <initialWindow>
     <title>TestAdobeAirAneSWC</title>
     <content>TestAdobeAirAneSWC.swf</content>
