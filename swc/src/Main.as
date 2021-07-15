@@ -26,7 +26,7 @@ package
 		{
 			var state:LuaState = LuaAPI.NewState();
 			var t:int = getTimer();
-			trace(state.dostring("i = 0 k=100 h=101 for j=0,100000000,1 do i=i+1 end"));
+			trace(state.dostring("i = 0 k=100 h=101 for j=0,10000000,1 do i=i+1 end"));
 			trace(state.getglobaltointeger("i"), state.getglobaltointeger("k"), state.getglobaltointeger("h"));
 			trace(getTimer()-t,"ms");
 		}

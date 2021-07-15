@@ -15,7 +15,7 @@
     </define>
     <define append="true">
       <name>CONFIG::timeStamp</name>
-      <value>'2021/7/14'</value>
+      <value>'2021/7/15'</value>
     </define>
     <define append="true">
       <name>CONFIG::air</name>
@@ -36,7 +36,7 @@
       <path-element>F:\proj\TestAdobeAirAne\testalchemy\src</path-element>
       <path-element>F:\proj\TestAdobeAirAne\testalchemy\Example_Lua\LuaStarling</path-element>
       <path-element>F:\proj\TestAdobeAirAne\testalchemy\ascript</path-element>
-      <path-element>d:\Program Files (x86)\FlashDevelop\Library\AS3\classes</path-element>
+      <path-element>D:\Program Files (x86)\FlashDevelop\Library\AS3\classes</path-element>
     </source-path>
     <library-path append="true">
       <path-element>F:\proj\TestAdobeAirAne\testalchemy\Example_Lua\lua.swc</path-element>
