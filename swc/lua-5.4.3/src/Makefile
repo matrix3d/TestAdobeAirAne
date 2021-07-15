@@ -139,8 +139,8 @@ flash:
 	"AR=$(CC) -shared -o" "RANLIB=strip --strip-unneeded" \
 	"SYSCFLAGS=-DLUA_USE_C89" "SYSLIBS=" "SYSLDFLAGS=-s" lua.exe
 	$(MAKE) "LUAC_T=luac.exe" luac.exe
-	$(CC) -c -O2 -Wall -Wextra -DLUA_COMPAT_5_3 -DLUA_USE_C89 hello.c
-	$(CC) -shared -o ../../hello.dll hello.o $(CORE_O) $(LIB_O) FlashRuntimeExtensions.lib 
+	$(CC) -c -O2 -Wextra -DLUA_COMPAT_5_3 -DLUA_USE_C89 luaas3api.c
+	$(CC) -shared -o ../luaas3api.dll luaas3api.o $(CORE_O) $(LIB_O) FlashRuntimeExtensions.lib 
 	
 posix:
 	$(MAKE) $(ALL) SYSCFLAGS="-DLUA_USE_POSIX"

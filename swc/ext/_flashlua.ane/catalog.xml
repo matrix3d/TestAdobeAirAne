@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+    <versions>
+        <swc version="1.2"/>
+        <compiler name="ActionScript Compiler" version="2.0.0" build="354208"/>
+    </versions>
+    <features>
+        <feature-script-deps/>
+    </features>
+    <libraries>
+        <library path="library.swf">
+            <script name="flashlua/LuaAPI" mod="1626323601797">
+                <def id="flashlua:LuaAPI"/>
+                <dep id="Object" type="i"/>
+                <dep id="flash.external:ExtensionContext" type="s"/>
+                <dep id="flashlua:LuaState" type="e"/>
+                <dep id="int" type="e"/>
+            </script>
+            <script name="flashlua/LuaBase" mod="1626321651901">
+                <def id="flashlua:LuaBase"/>
+                <dep id="Object" type="i"/>
+                <dep id="int" type="s"/>
+            </script>
+            <script name="flashlua/LuaState" mod="1626329523526">
+                <def id="flashlua:LuaState"/>
+                <dep id="String" type="s"/>
+                <dep id="flashlua:LuaAPI" type="e"/>
+                <dep id="flashlua:LuaBase" type="i"/>
+                <dep id="int" type="s"/>
+                <dep id="uint" type="e"/>
+            </script>
+            <digests>
+                <digest type="SHA-256" signed="false" value="a9f4b78984a59900fde693351f3841c6af380113055124e87bbf11c15730467a"/>
+            </digests>
+        </library>
+    </libraries>
+</swc>

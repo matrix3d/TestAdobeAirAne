@@ -16,6 +16,7 @@
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
+    <class path="lua-5.4.3\swcsrc" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -53,6 +54,7 @@
   <!-- SWC Libraries -->
   <libraryPaths>
     <element path="ext\winane.ane" />
+    <element path="ext\flashlua.ane" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>

@@ -637,36 +637,7 @@ static int pmain (lua_State *L) {
   return 1;
 }
 
-static int mytestpmain (lua_State *L) {
-  luaL_openlibs(L);  /* open standard libraries */
-  lua_gc(L, LUA_GCGEN, 0, 0);  /* GC in generational mode */
-  //dofile(L, NULL);  /* executes stdin as a file */
-  dostring(L,"print(1+2)",NULL);
-  lua_pushboolean(L, 1);  /* signal no errors */
-  return 1;
-}
-
-int test(){
-	int status, result;
-  lua_State *L = luaL_newstate();  /* create state */
-  if (L == NULL) {
-    l_message("test","cannot create state: not enough memory");
-    return EXIT_FAILURE;
-  }
-  lua_pushcfunction(L, &mytestpmain);  /* to call 'pmain' in protected mode */
-	//
-  status = lua_pcall(L, 0, 1, 0);  /* do the call */
-  result = lua_toboolean(L, -1);  /* get result */
-  report(L, status);
-  lua_close(L);
-  return (result && status == LUA_OK) ? EXIT_SUCCESS : EXIT_FAILURE;
-  //return 0;
-}
-
 int main (int argc, char **argv) {
-	printf("%d,%s_%c\n",argc,argv[0],argv[0][0]);
-	test();
-	return 0;
   int status, result;
   lua_State *L = luaL_newstate();  /* create state */
   if (L == NULL) {

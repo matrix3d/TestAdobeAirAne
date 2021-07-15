@@ -1,0 +1,13 @@
+<extension xmlns="http://ns.adobe.com/air/extension/2.5">
+<id>luaane</id>
+<versionNumber>1</versionNumber>
+<platforms>
+		<platform name="Windows-x86">
+			<applicationDeployment>
+				<nativeLibrary>luaas3api.dll</nativeLibrary>
+				<initializer>extInitializer</initializer>
+				<finalizer>extFinalizer</finalizer>
+			</applicationDeployment>
+		</platform>
+</platforms>
+</extension>

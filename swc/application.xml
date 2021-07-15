@@ -4,7 +4,7 @@
   <versionNumber>1.0</versionNumber>
   <filename>TestAdobeAirAneSWC</filename>
   <name>TestAdobeAirAneSWC</name>
-	<supportedProfiles>extendedDesktop</supportedProfiles>
+  <supportedProfiles>extendedDesktop</supportedProfiles>
   <initialWindow>
     <title>TestAdobeAirAneSWC</title>
     <content>TestAdobeAirAneSWC.swf</content>
@@ -19,10 +19,11 @@
 	More options:
 	http://livedocs.adobe.com/flex/3/html/File_formats_1.html#1043413
 	-->
-  <extensions>
-    <extensionID>winane</extensionID>
-  </extensions>
   <android>
     <manifestAdditions><![CDATA[<manifest android:installLocation="auto" xmlns:android="http://schemas.android.com/apk/res/android" />]]></manifestAdditions>
   </android>
+  <extensions>
+    <extensionID>winane</extensionID>
+    <extensionID>luaane</extensionID>
+  </extensions>
 </application>
