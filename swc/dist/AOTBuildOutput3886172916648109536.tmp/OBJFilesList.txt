@@ -1,0 +1,2 @@
+extensionglue.o
+C:\Users\li456\AppData\Local\Temp\fc89dd89-2522-4957-be14-22055c0f96ba\libluaane.a

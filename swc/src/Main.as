@@ -16,7 +16,7 @@ package
 	 */
 	public class Main extends Sprite
 	{
-		private var test:TestAdobeAirAneSWC;
+		//private var test:TestAdobeAirAneSWC;
 		private  var tf:TextField;
 		public function Main() 
 		{
@@ -26,7 +26,7 @@ package
 			
 			addChild(tf);
 			
-			test = new TestAdobeAirAneSWC();
+			//test = new TestAdobeAirAneSWC();
 			
 			LuaAPI.Init();
 			
@@ -50,8 +50,9 @@ package
 		private function stage_click(e:MouseEvent):void 
 		{
 			var time:int = getTimer();
-			trace(test.test() + " clang,"+(getTimer()-time)+",ms");
+			//trace(test.test() + " clang0,"+(getTimer()-time)+",ms");
 			var state:LuaState = LuaAPI.NewState();
+			trace(state.pointer);
 			var t:int = getTimer();
 			trace(state.dostring("i = 0 k=100 h=101 for j=0,10000000,1 do i=i+1 end"));
 			trace(state.getglobaltointeger("i"), state.getglobaltointeger("k"), state.getglobaltointeger("h"));

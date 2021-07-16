@@ -9,7 +9,7 @@
     </features>
     <libraries>
         <library path="library.swf">
-            <script name="flashlua/LuaAPI" mod="1626323601797">
+            <script name="flashlua/LuaAPI" mod="1626420285181">
                 <def id="flashlua:LuaAPI"/>
                 <dep id="Object" type="i"/>
                 <dep id="flash.external:ExtensionContext" type="s"/>
@@ -21,7 +21,7 @@
                 <dep id="Object" type="i"/>
                 <dep id="int" type="s"/>
             </script>
-            <script name="flashlua/LuaState" mod="1626329523526">
+            <script name="flashlua/LuaState" mod="1626423000685">
                 <def id="flashlua:LuaState"/>
                 <dep id="String" type="s"/>
                 <dep id="flashlua:LuaAPI" type="e"/>

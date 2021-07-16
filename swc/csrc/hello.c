@@ -63,4 +63,4 @@ void extInitializer(void** extDataToSet,
 }
 
 // アプリケーション終了時に呼ばれる, DLLからエクスポート
-//EXPORT void extFinalizer(void* extData) { /* なにもしない */ }
+void extFinalizer(void* extData) { /* なにもしない */ }

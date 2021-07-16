@@ -1,0 +1,2 @@
+extensionglue.o
+C:\Users\li456\AppData\Local\Temp\0c524a31-05a1-4645-a047-5ba37f11b360\libwinane.a

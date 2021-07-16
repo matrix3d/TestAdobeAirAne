@@ -23,7 +23,6 @@
     <manifestAdditions><![CDATA[<manifest android:installLocation="auto" xmlns:android="http://schemas.android.com/apk/res/android" />]]></manifestAdditions>
   </android>
   <extensions>
-    <extensionID>winane</extensionID>
     <extensionID>luaane</extensionID>
   </extensions>
 </application>
