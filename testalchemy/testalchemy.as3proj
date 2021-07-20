@@ -55,6 +55,7 @@
   <!-- SWC Libraries -->
   <libraryPaths>
     <element path="Example_Lua\lua.swc" />
+    <element path="lib\MinimalComps_0_9_10.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>

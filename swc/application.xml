@@ -24,5 +24,6 @@
   </android>
   <extensions>
     <extensionID>luaane</extensionID>
+    <extensionID>winane</extensionID>
   </extensions>
 </application>

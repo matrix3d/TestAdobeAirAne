@@ -19,10 +19,15 @@ package
 			return context.call("hello") as int;
 		}
 		
-		public function test2(v:int):int{
-			return context.call("test2", v) as int;
+		public function trace():Object{
+			return context.call("trace", new A/*{Trace:trace}*/);
 		}
 		
 	}
 	
+}
+class A{
+	public function Trace(...args):void{
+		trace("ATR",args);
+	}
 }

@@ -9,14 +9,22 @@
     </features>
     <libraries>
         <library path="library.swf">
-            <script name="TestAdobeAirAneSWC" mod="1626242580003">
+            <script name="TestAdobeAirAneSWC" mod="1626677417930">
                 <def id="TestAdobeAirAneSWC"/>
+                <dep id="Array" type="s"/>
                 <dep id="Object" type="i"/>
                 <dep id="flash.external:ExtensionContext" type="s"/>
                 <dep id="int" type="e"/>
+                <dep id="trace" type="e"/>
+            </script>
+            <script name="TestTrace" mod="1626672450084">
+                <def id="TestTrace"/>
+                <dep id="Object" type="i"/>
+                <dep id="String" type="s"/>
+                <dep id="trace" type="e"/>
             </script>
             <digests>
-                <digest type="SHA-256" signed="false" value="85c93df57d1ad5142fa7e80abcfc01cae3b6ec533205869343a98c4633724c89"/>
+                <digest type="SHA-256" signed="false" value="7ea175bd9d6fb1fc6ed13b5f3d5fbeef78a7407028c8f1ed42399409488faf99"/>
             </digests>
         </library>
     </libraries>

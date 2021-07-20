@@ -8,14 +8,14 @@
           <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
         </Transforms>
         <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-        <DigestValue>uQjbHIJ+z72R36E4nqax1QMGLAZdvWvrVALNf1mxqRs=</DigestValue>
+        <DigestValue>3ZXw6MWgPJmZJw3JjDiUNyHdv6GfixFRG7wGSsOWhuQ=</DigestValue>
       </Reference>
     </SignedInfo>
-    <SignatureValue Id="PackageSignatureValue">IWqaBPf6JuZNee9DdcfYglBRHGWyM4v3sF5IQzRjAgHc2RPW8rRQZWAKNfrtQPG5Nvc1/+yf6Zt/
-/d9Hzb4u1+HmX1WkVNUGxYWGrkj23X2C/W4KE+sI2CysJJUfrTcLry1A4ByMAtQ8xvGiQuF7Ruly
-ch8iU0EesVUj1ExcN6IykABjDU0kkvddrIWG+sTRO2TLg4t8HkOIVLCsOe+JwkCa49gA7j3ADOxe
-dO6sTO2JynyDInZXcFe6rKYwxnen5fnbhrBqSxTlSoGUA+6o+0joNJ9Zh4nQ88HOk89qfImqRKCX
-Lv1ESCH6KlzV46Yf1iX2LNgfZueMAuiRHwFzXw==</SignatureValue>
+    <SignatureValue Id="PackageSignatureValue">EWq7hAmtznInmx75dWrYyYq7cmSdF+rRuk+IZAvWkPj5L/iB+4ywd3jbyq/cQVc2o1GwEI3HQU7z
+I3eXPiEoW5BKxQPrjBai7q7VMblgUz+fQh0RAkQHDqjlYPMO+sCxr2fLiFPGrhkolG3NXMbqZ6hP
+Q7d+B2dx6Lg9mPWtUhNrNaSQufkNPyfbY1qKR0ZLr57WJscVW7DfZUaNGBea2pBIEGKkYwgKL+B+
+rE5PL8ihoIyEKyEeMo6Hg46F5TG0cZng2yaMTo7W0oR8TUK0vVq54TwTM9Vh7ntzXlQq2swghsGG
+D5EJC0pqnQomhuDJZK4Dty+iT8vtj7mZqYi81Q==</SignatureValue>
     <KeyInfo>
       <X509Data>
         <X509Certificate>MIIC5TCCAc2gAwIBAgIaMTFjZWFkMjc6MTdhODljOGQ5MWQ6LTgwMDAwDQYJKoZIhvcNAQEFBQAw
@@ -36,7 +36,7 @@ CAr4TA==</X509Certificate>
     </KeyInfo>
     <Object>
       <Manifest Id="PackageContents">
-        <Reference URI="mimetype"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod><DigestValue>QfjPqwYNSozTaKi3Ar1Veog4uaFk5DPieQA0v9uRJdY=</DigestValue></Reference><Reference URI="META-INF/ANE/extension.xml"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod><DigestValue>73vE9S6TIxslgwKaYkEzGN2dwCM8rVpwGD1xrp8RPSM=</DigestValue></Reference><Reference URI="catalog.xml"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod><DigestValue>Xi4GH6GVnmvbsIlLuNa/eDz8qY5JWDZtvOGqcH6xeqM=</DigestValue></Reference><Reference URI="library.swf"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod><DigestValue>hck99X0a1RQvp+gKvPwByuO27FMyBYaTQ6mMRjNyTIk=</DigestValue></Reference><Reference URI="META-INF/ANE/iPhone-ARM/hello.a"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod><DigestValue>p7FeMfpxp5/fgWV3wce6poKGRrKH2JsaRv4A1AK69cs=</DigestValue></Reference><Reference URI="META-INF/ANE/iPhone-ARM/library.swf"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod><DigestValue>hck99X0a1RQvp+gKvPwByuO27FMyBYaTQ6mMRjNyTIk=</DigestValue></Reference><Reference URI="META-INF/ANE/Windows-x86/hello.dll"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod><DigestValue>mm7QdPseXPQm+XDt4PvPbhrWcadjt5XtU5yKlt5GWsY=</DigestValue></Reference><Reference URI="META-INF/ANE/Windows-x86/library.swf"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod><DigestValue>hck99X0a1RQvp+gKvPwByuO27FMyBYaTQ6mMRjNyTIk=</DigestValue></Reference>
+        <Reference URI="mimetype"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod><DigestValue>QfjPqwYNSozTaKi3Ar1Veog4uaFk5DPieQA0v9uRJdY=</DigestValue></Reference><Reference URI="META-INF/ANE/extension.xml"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod><DigestValue>73vE9S6TIxslgwKaYkEzGN2dwCM8rVpwGD1xrp8RPSM=</DigestValue></Reference><Reference URI="catalog.xml"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod><DigestValue>obZnbJBkx51JDepQMcwRykzA651xpF2MsAXoIwllqCQ=</DigestValue></Reference><Reference URI="library.swf"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod><DigestValue>fqF1vZ1vsfxu0TtfPV++73inQHAoyPHtQjmUCUiPr5k=</DigestValue></Reference><Reference URI="META-INF/ANE/iPhone-ARM/hello.a"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod><DigestValue>p7FeMfpxp5/fgWV3wce6poKGRrKH2JsaRv4A1AK69cs=</DigestValue></Reference><Reference URI="META-INF/ANE/iPhone-ARM/library.swf"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod><DigestValue>fqF1vZ1vsfxu0TtfPV++73inQHAoyPHtQjmUCUiPr5k=</DigestValue></Reference><Reference URI="META-INF/ANE/Windows-x86/hello.dll"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod><DigestValue>5DHrG9g8Jk3hMr0Y9x4P/4rnv8w30w5/GlLRM3591bQ=</DigestValue></Reference><Reference URI="META-INF/ANE/Windows-x86/library.swf"><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod><DigestValue>fqF1vZ1vsfxu0TtfPV++73inQHAoyPHtQjmUCUiPr5k=</DigestValue></Reference>
       </Manifest>
     </Object>
     <Object xmlns:xades="http://uri.etsi.org/01903/v1.1.1#" > 
@@ -50,8 +50,8 @@ CAr4TA==</X509Certificate>
             </Transforms>
             <xades:EncapsulatedTimeStamp>
               MIIOEwYJKoZIhvcNAQcCoIIOBDCCDgACAQMxDTALBglghkgBZQMEAgEwgf4GCyqGSIb3DQEJEAEE
-oIHuBIHrMIHoAgEBBgtghkgBhvhFAQcXAzAhMAkGBSsOAwIaBQAEFEA8axEmPzaWxuLR8hvk3xAm
-sccMAhQ+NSUqKCYCnPNrHaZsT0Ah4yhflhgPMjAyMTA3MTYwNzE0MTFaMAMCAR6ggYakgYMwgYAx
+oIHuBIHrMIHoAgEBBgtghkgBhvhFAQcXAzAhMAkGBSsOAwIaBQAEFLIBZfkvqsluWpo2HMdft6zX
+n4IBAhQwnE/lcxZaSeNq5Zc0uSpOl/68WhgPMjAyMTA3MTkwNjUxMThaMAMCAR6ggYakgYMwgYAx
 CzAJBgNVBAYTAlVTMR0wGwYDVQQKExRTeW1hbnRlYyBDb3Jwb3JhdGlvbjEfMB0GA1UECxMWU3lt
 YW50ZWMgVHJ1c3QgTmV0d29yazExMC8GA1UEAxMoU3ltYW50ZWMgU0hBMjU2IFRpbWVTdGFtcGlu
 ZyBTaWduZXIgLSBHM6CCCoswggU4MIIEIKADAgECAhB7BbHUSWhRRPfJidKcGZ0SMA0GCSqGSIb3
@@ -105,14 +105,14 @@ LB8AP8NLFMZnHMweBqOQX1xUiz7jM1uCD8W3hgJOcZ/pZkU/djGCAlowggJWAgEBMIGLMHcxCzAJ
 BgNVBAYTAlVTMR0wGwYDVQQKExRTeW1hbnRlYyBDb3Jwb3JhdGlvbjEfMB0GA1UECxMWU3ltYW50
 ZWMgVHJ1c3QgTmV0d29yazEoMCYGA1UEAxMfU3ltYW50ZWMgU0hBMjU2IFRpbWVTdGFtcGluZyBD
 QQIQe9Tlr7rMBz+hASMEIkFNEjALBglghkgBZQMEAgGggaQwGgYJKoZIhvcNAQkDMQ0GCyqGSIb3
-DQEJEAEEMBwGCSqGSIb3DQEJBTEPFw0yMTA3MTYwNzE0MTFaMC8GCSqGSIb3DQEJBDEiBCCUjI+j
-0ScfFpkjuCUc172Vu57tITMgU/fzYCpYjuZD1TA3BgsqhkiG9w0BCRACLzEoMCYwJDAiBCDEdM52
-AH0COU4NpeTefBTGgPniggE8/vZT7123H99h+DALBgkqhkiG9w0BAQEEggEAmydE0Hm5uTZbynpp
-Btm8pojZMigPLnA0iNqheKdUjUKtDptgHYJ+9hNmie88EH6bvaAHNEyVb1vCCy1nQUvP42OaeL79
-GgpdfzzQE8sTvhomH2Pbl1ak4ueD59kx75Z7iGYddeeeuUNUhAEhp3jJ3Wt0SXpNlribsgCjn/Zw
-FKl85hK/iZFsYIsBA9cetqTmRyqDCCyCeH1j4xjDPwph/1FMuzpa7yG+g1LMkuXUiqHGDPGhlFHW
-DTgpqKe8FIIp5f0gDdgtB1X6iiRCBnSTjJGb0/xxLk6CKUrlvqOypyD8YLmOgS5v9BwTRcdzpm34
-v77ZQXnfkxIVfz27iM2Z6A==
+DQEJEAEEMBwGCSqGSIb3DQEJBTEPFw0yMTA3MTkwNjUxMThaMC8GCSqGSIb3DQEJBDEiBCAODb2k
+Y3Xp+OWn/05ViGQfsUdwgl3kmj4/JbQchHvjUzA3BgsqhkiG9w0BCRACLzEoMCYwJDAiBCDEdM52
+AH0COU4NpeTefBTGgPniggE8/vZT7123H99h+DALBgkqhkiG9w0BAQEEggEArT4gSfljHjDZqS+6
+ijoUKhBGGRMqZPZP8x/sabciIiLlQih6V0kiZiERcBU6cMU2bDwHR+wbjUE430X+pxegY1yajXBu
+yjEoIZuIR32B2TiN93qkjKskAz07hI+da4zysBoN5ZUBmNr75oT13dNonxjuBo7Q3oqLUBavvIdb
+BG3Ldwdv8yJrrymMHiW38FSiA8Zg0fGicw66Oj3H+vtba0LYzI1rdDXin9QZi+t+EF5Rygszv3ri
+bUsk8hSV/RJNucD+F/DtcfVjTIZqLt83f92/91T6S2wkirDU+tJwkmI58sunnLMIlgr1xr2ZAdKC
+ea0z1to1nYd/7AcMPWX2kQ==
             </xades:EncapsulatedTimeStamp>     	
      	  </xades:HashDataInfo>     	
         </xades:SignatureTimeStamp>

@@ -17,6 +17,35 @@ FREObject _hello(FREObject ctx, void* funcData,
   FRENewObjectFromInt32(j,&ret);
   return ret;
 }
+
+FREObject trace(FREObject ctx, void* funcData,
+                 uint32_t argc, FREObject argv[]) {
+					 FREObject str;
+  const char* msg = (const char*)"Hello, World!";
+  FRENewObjectFromUTF8(strlen(msg) + 1, (const uint8_t*)msg, &str);
+	FREObject args[1];
+	args[0] = str;
+	FREObject fm = NULL;
+	FREResult fre = FRENewObject("TestTrace",1,args,&fm,NULL);
+			
+	
+	FREObject rr;
+	FRECallObjectMethod(fm,"testfun",0,NULL,&rr,NULL);
+	//printf("Message to fre FREResult %i\n",fre);
+
+	//return fm;
+  FREObject ret;
+  FREObject flash=argv[0];
+  FREObject traceret;
+  FREObject exp;
+  FREObject strs[1];
+  strs[0]=str;
+  FRECallObjectMethod(flash,"Trace",1,strs,&traceret,&exp);
+  //return traceret;
+  
+  
+	return exp;
+}
 /** FREObject型
  *    typedef void* FREObject
  *
@@ -31,7 +60,8 @@ FREObject _hello(FREObject ctx, void* funcData,
 // functionData はここでは使わない
 // _hello がネイティブ関数へのポインタ
 FRENamedFunction _methods[] = {
-  { (const uint8_t*)"hello", NULL, _hello }
+  { (const uint8_t*)"hello", NULL, _hello },
+  { (const uint8_t*)"trace", NULL, trace }
 };
 /** FRENamedFunction構造体
  *     typedef struct FRENamedFunction_ {

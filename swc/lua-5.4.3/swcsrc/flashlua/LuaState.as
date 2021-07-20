@@ -19,6 +19,9 @@ package flashlua
 		public function getglobaltointeger(name:String):int{
 			return LuaAPI.context.call("getglobaltointeger",pointer,name) as uint;
 		}
+		public function openlibs():void{
+			LuaAPI.context.call("openlibs", pointer);
+		}
 	}
 
 }

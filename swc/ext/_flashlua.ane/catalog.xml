@@ -21,7 +21,7 @@
                 <dep id="Object" type="i"/>
                 <dep id="int" type="s"/>
             </script>
-            <script name="flashlua/LuaState" mod="1626423000685">
+            <script name="flashlua/LuaState" mod="1626762898181">
                 <def id="flashlua:LuaState"/>
                 <dep id="String" type="s"/>
                 <dep id="flashlua:LuaAPI" type="e"/>
@@ -30,7 +30,7 @@
                 <dep id="uint" type="e"/>
             </script>
             <digests>
-                <digest type="SHA-256" signed="false" value="a9f4b78984a59900fde693351f3841c6af380113055124e87bbf11c15730467a"/>
+                <digest type="SHA-256" signed="false" value="eb113429d45671779fb1954c2be2158893754de19a1127f737db3c67c9d0c4e1"/>
             </digests>
         </library>
     </libraries>

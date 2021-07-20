@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+    <versions>
+        <swc version="1.2"/>
+        <compiler name="ActionScript Compiler" version="2.0.0" build="354208"/>
+    </versions>
+    <features>
+        <feature-script-deps/>
+    </features>
+    <libraries>
+        <library path="library.swf">
+            <script name="TestAdobeAirAneSWC" mod="1626675134000">
+                <def id="TestAdobeAirAneSWC"/>
+                <dep id="Array" type="s"/>
+                <dep id="Object" type="i"/>
+                <dep id="flash.external:ExtensionContext" type="s"/>
+                <dep id="int" type="e"/>
+                <dep id="trace" type="e"/>
+            </script>
+            <script name="TestTrace" mod="1626672450084">
+                <def id="TestTrace"/>
+                <dep id="Object" type="i"/>
+                <dep id="String" type="s"/>
+                <dep id="trace" type="e"/>
+            </script>
+            <digests>
+                <digest type="SHA-256" signed="false" value="eb07ba671092f722683193b36d7a7cf195ce30d5f7f070b26e37b095d1952a3e"/>
+            </digests>
+        </library>
+    </libraries>
+</swc>

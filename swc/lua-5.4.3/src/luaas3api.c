@@ -11,7 +11,14 @@ FREObject newState(FREObject ctx, void* funcData,
   FRENewObjectFromInt32((int32_t)L,&ret);
   return ret;
 }
-
+FREObject openlibs(FREObject ctx, void* funcData,
+                 uint32_t argc, FREObject argv[]) {
+  FREObject ret;
+  lua_State* L;
+  FREGetObjectAsInt32(argv[0],(int32_t*)&L);
+ luaL_openlibs(L);
+  return ret;
+}
 FREObject dostring(FREObject ctx, void* funcData,
                  uint32_t argc, FREObject argv[]) {
   FREObject ret;
@@ -42,6 +49,7 @@ FREObject getglobaltointeger(FREObject ctx, void* funcData,
 FRENamedFunction _methods[] = {
   { (const uint8_t*)"newState", NULL, newState },
   { (const uint8_t*)"dostring", NULL, dostring },
+  { (const uint8_t*)"openlibs", NULL, openlibs },
   { (const uint8_t*)"getglobaltointeger", NULL, getglobaltointeger }
 };
 void _ctxInitializer(void* extData, const uint8_t* ctxType,
