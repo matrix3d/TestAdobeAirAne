@@ -11,16 +11,18 @@ https://help.adobe.com/zh_CN/air/extensions/index.html
 
 |  lang   | time  |
 |  ----  | ----  |
-| as3 win | 34 |
+| as3 windows | 34 |
 | as3 ios | 34 |
-| ascript win  | 34000 |
+| ascript windows  | 34000 |
 | ascript ios  | 12000 |
-| lua alchemy win  | 347 |
+| lua alchemy windows  | 347 |
 | lua alchemy ios  | 1278 |
 | lua  | 90 |
-| lua ane win  | 150 |
+| lua ane windows  | 150 |
 | lua ane ios  | 167 |
-| c ane win  | 19 |
-| c ane win release  | 0 |
+| c ane windows  | 19 |
+| c ane windows release  | 0 |
 | c ane ios  | 59 |
 | c ane ios release  | 0 |
+| Ruffle windows  | 1965 |
+| Lightspark windows  | 94 |

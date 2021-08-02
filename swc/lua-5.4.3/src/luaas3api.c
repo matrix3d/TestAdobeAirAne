@@ -13,11 +13,12 @@ FREObject newState(FREObject ctx, void* funcData,
 }
 FREObject openlibs(FREObject ctx, void* funcData,
                  uint32_t argc, FREObject argv[]) {
-  FREObject ret;
+					 
+  //FREObject ret;
   lua_State* L;
   FREGetObjectAsInt32(argv[0],(int32_t*)&L);
  luaL_openlibs(L);
-  return ret;
+  return NULL;
 }
 FREObject dostring(FREObject ctx, void* funcData,
                  uint32_t argc, FREObject argv[]) {
